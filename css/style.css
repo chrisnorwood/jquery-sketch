@@ -1,8 +1,10 @@
+/* General Page Structure */
 .wrapper {
-	width: 80%;
+	width: 500px;
 	margin: 50px auto;
 }
 
+/* Grid System */
 #grid {
 	width: 480px;
 	height: 480px;
@@ -10,9 +12,6 @@
 }
 
 .row {
-	display: block;
-	width: 480px;
-	height: 30px;
 	margin: 0 auto;
 }
 .square {
@@ -26,4 +25,17 @@
 	outline: 1px solid;
 	
 	background: #FFF;
+}
+
+/* User Inputs */
+#user-input {
+	margin-top: 20px;
+}
+
+#user-input input {
+	width: 50px;
+}
+
+#user-input > button {
+	float: right;
 }

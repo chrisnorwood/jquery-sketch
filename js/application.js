@@ -15,7 +15,7 @@ $(document).ready(function(){
 		$('#grid').append($row.clone());
 	}
 
-	$('.square').on('mouseover', function() {
+	$('.square').on('mouseenter', function() {
 		$(this).css('background', '#000');
 	});
 
