@@ -32,10 +32,11 @@
 	margin-top: 20px;
 }
 
-#user-input input {
-	width: 50px;
+#user-input > button.resize {
+	float: left;
 }
 
-#user-input > button {
+
+#user-input > button.reset {
 	float: right;
 }
