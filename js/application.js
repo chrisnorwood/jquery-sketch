@@ -22,6 +22,7 @@ $(document).ready(function(){
 
 // Helper Functions
 
+// Draws square grid of given dimensions
 var drawGrid = function (dim) {
 	var $row = $('<div />', {class: 'row'})
 	var $square_init = $('<div />', {class: 'square'});
@@ -37,17 +38,20 @@ var drawGrid = function (dim) {
 	}
 };
 
+// Removes all grid elements from the DOM
 var removeGrid = function () {
 	$('.square').remove();
 	$('.row').remove();
 };
 
+// Allows for sketching functionality (i.e. etch-a-sketch)
 var sketch = function () {
 	$('.square').on('mouseenter', function() {
 		$(this).css('background', '#000');
 	});
 };
 
+// Resets grid background-color to white
 var eraseGrid = function () {
 	$('.square').css('background', '#fff');
 };
